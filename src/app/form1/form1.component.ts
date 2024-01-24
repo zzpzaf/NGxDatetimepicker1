@@ -16,7 +16,11 @@ export class Form1Component {
   input1Placeholder: string = 'Type some text here';
   input1ControlNane: string = 'input1';
 
+  dt1ControlName: string = 'dtpicker1';
+
   submitButtomText: string = 'Submit';
+
+
 
   constructor( private formBuilder: FormBuilder ) { }
 
@@ -30,6 +34,7 @@ export class Form1Component {
 
     fbGroup.addControl(this.input1ControlNane, new FormControl(""));
     // Add more controls here
+    fbGroup.addControl(this.dt1ControlName, new FormControl(""));
 
     this.demoFormGroup = fbGroup;
   }
